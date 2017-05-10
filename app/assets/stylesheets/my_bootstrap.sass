@@ -1,0 +1,35 @@
+// Grid: http://getbootstrap.com/css/#grid
+body
+  @extend .container
+  padding-bottom: 50px
+
+// Well component: http://getbootstrap.com/components/#wells
+form
+  @extend .well
+
+// Tables: http://getbootstrap.com/css/#tables
+table
+  @extend .table, .table-hover, .table-striped
+
+// Buttons: http://getbootstrap.com/css/#buttons
+input[type=submit]
+  @extend .btn, .btn-success
+
+// Form inputs: http://getbootstrap.com/css/#forms
+input[type=text], input[type=number]
+  @extend .form-control
+
+// Button options: http://getbootstrap.com/css/#buttons-options
+a
+  @extend .btn, .btn-sm
+
+  // In SASS, the symbol "&" refers to the parent selector -- in this case it's "a".
+  // See https://css-tricks.com/the-sass-ampersand/#article-header-id-1
+  // Rails appends the attribute data-method="delete" to links using the HTTP DELETE method.
+  // e.g. <%= link_to 'Destroy', product, method: :delete %>
+  &[data-method=delete]
+    @extend .btn-danger
+
+  // Selecting the "a" that comes after a "br" that comes after a "table"
+  table + br + &
+    @extend .btn-lg, .btn-block, .btn-primary
