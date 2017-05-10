@@ -70,4 +70,4 @@ a[data-method=delete]
   @extend .btn-danger
 ```
 
-Rails scaffolded views have a specific structure that you can rely on to style your app globally. Check `app/assets/stylesheets/my_bootstrap.sass` for more ideas.
+Rails scaffolded views have a specific structure that you can rely on to style your app globally. Check [`app/assets/stylesheets/my_bootstrap.sass`](https://github.com/jmosouza/bootstrap_on_rails/blob/master/app/assets/stylesheets/my_bootstrap.sass) for more ideas.
